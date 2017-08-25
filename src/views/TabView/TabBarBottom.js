@@ -156,6 +156,7 @@ export default class TabBarBottom extends PureComponent<
           return (
             <TouchableWithoutFeedback
               key={route.key}
+              testID={route.key + '-Tab'}
               onPress={() => jumpToIndex(index)}
             >
               <Animated.View
